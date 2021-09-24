@@ -35,3 +35,30 @@ Only one valid answer exists.
 
 
 **Follow-up:** Can you come up with an algorithm that is less than O(n2) time complexity?
+
+Exponential solution O(n^2):
+
+    public int[] exponentialAlgorithm(int[] nums, int target) {
+        int[] solution = new int[2];
+        boolean found = false;
+
+        for (int i = 0; i < nums.length; i++){
+            if (!found) {
+                for (int j = 0; j < nums.length; j++){
+                    if (!found) {
+                        if (i != j && (nums[i] + nums[j] == target)) {
+                            solution[0] = i;
+                            solution[1] = j;
+                            found = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        return solution;
+    }
+
+This is the algorithm performance according to: https://leetcode.com/problems/two-sum/
+
+![](exponentialPerformance.png)
