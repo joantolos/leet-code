@@ -39,26 +39,40 @@ Only one valid answer exists.
 Exponential solution O(n^2):
 
     public int[] exponentialAlgorithm(int[] nums, int target) {
-        int[] solution = new int[2];
-        boolean found = false;
-
         for (int i = 0; i < nums.length; i++){
-            if (!found) {
-                for (int j = 0; j < nums.length; j++){
-                    if (!found) {
-                        if (i != j && (nums[i] + nums[j] == target)) {
-                            solution[0] = i;
-                            solution[1] = j;
-                            found = true;
-                        }
-                    }
+            for (int j = 0; j < nums.length; j++){
+                if (i != j && (nums[i] + nums[j] == target)) {
+                    return new int[]{i, j};
                 }
             }
         }
 
-        return solution;
+        return null;
     }
 
 This is the algorithm performance according to: https://leetcode.com/problems/two-sum/
 
-![](exponentialPerformance.png)
+![](exponential1.png)
+
+![](exponential2.png)
+
+Lineal solution O(n):
+
+    public int[] logarithmAlgorithm(int[] nums, int target) {
+        Map<Integer, Integer> numMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++){
+            int complement = target - nums[i];
+            if (numMap.containsKey(complement)) {
+                return new int[] { numMap.get(complement), i };
+            } else {
+                numMap.put(nums[i], i);
+            }
+        }
+        return null;
+    }
+
+This is the algorithm performance according to: https://leetcode.com/problems/two-sum/
+
+![](lineal1.png)
+
+![](lineal2.png)
