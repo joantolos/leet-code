@@ -17,14 +17,14 @@ public class TwoSum {
         return null;
     }
 
-    public int[] logarithmAlgorithm(int[] nums, int target) {
-        Map<Integer, Integer> numMap = new HashMap<>();
+    public int[] linealAlgorithm(int[] nums, int target) {
+        Map<Integer, Integer> lookedUpNums = new HashMap<>();
         for (int i = 0; i < nums.length; i++){
-            int complement = target - nums[i];
-            if (numMap.containsKey(complement)) {
-                return new int[] { numMap.get(complement), i };
+            int subtracted = target - nums[i];
+            if (lookedUpNums.containsKey(subtracted)) {
+                return new int[] { lookedUpNums.get(subtracted), i };
             } else {
-                numMap.put(nums[i], i);
+                lookedUpNums.put(nums[i], i);
             }
         }
         return null;

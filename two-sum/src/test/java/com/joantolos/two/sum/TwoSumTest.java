@@ -30,17 +30,17 @@ public class TwoSumTest {
 
     @Test
     public void logarithmAlgorithmShouldRespondAsExponentialAlgorithmForExampleOne() {
-        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleOneNumbers, exampleOneTarget), twoSum.logarithmAlgorithm(exampleOneNumbers, exampleOneTarget));
+        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleOneNumbers, exampleOneTarget), twoSum.linealAlgorithm(exampleOneNumbers, exampleOneTarget));
     }
 
     @Test
     public void logarithmAlgorithmShouldRespondAsExponentialAlgorithmForExampleTwo() {
-        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleTwoNumbers, exampleTwoTarget), twoSum.logarithmAlgorithm(exampleTwoNumbers, exampleTwoTarget));
+        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleTwoNumbers, exampleTwoTarget), twoSum.linealAlgorithm(exampleTwoNumbers, exampleTwoTarget));
     }
 
     @Test
     public void logarithmAlgorithmShouldRespondAsExponentialAlgorithmForExampleThree() {
-        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleThreeNumbers, exampleThreeTarget), twoSum.logarithmAlgorithm(exampleThreeNumbers, exampleThreeTarget));
+        Assert.assertArrayEquals(twoSum.exponentialAlgorithm(exampleThreeNumbers, exampleThreeTarget), twoSum.linealAlgorithm(exampleThreeNumbers, exampleThreeTarget));
     }
 
 }
