@@ -27,3 +27,8 @@ Assume the environment does not allow you to store 64-bit integers (signed or un
 ## Constraints:
 
 -231 <= x <= 231 - 1
+
+## Results
+
+![](reverseInteger.png)
+![](reverseInteger2.png)
