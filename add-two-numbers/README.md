@@ -1,28 +1,31 @@
-# Add two numbers
+# Palindrome number
 
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+Given an integer x, return true if x is palindrome integer.
 
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
 
 ## Example 1:
 
-![](addtwonumber1.jpg)
-
-    Input: l1 = [2,4,3], l2 = [5,6,4]
-    Output: [7,0,8]
-    Explanation: 342 + 465 = 807.
-
+    Input: x = 121
+    Output: true
+    
 ## Example 2:
 
-    Input: l1 = [0], l2 = [0]
-    Output: [0]
+    Input: x = -121
+    Output: false
+    Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
 ## Example 3:
 
-    Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-    Output: [8,9,9,9,0,0,0,1]
+    Input: x = 10
+    Output: false
+    Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-## Constraints
-- The number of nodes in each linked list is in the range [1, 100].
-- 0 <= Node.val <= 9
-- It is guaranteed that the list represents a number that does not have leading zeros.
+## Example 4:
+
+    Input: x = -101
+    Output: false
+
+## Constraints:
+
+-231 <= x <= 231 - 1

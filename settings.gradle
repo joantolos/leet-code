@@ -11,3 +11,4 @@ rootProject.name = 'leet-code'
 include('two-sum')
 include('add-two-numbers')
 include('reverse-integer')
+include('palindrome-number')
