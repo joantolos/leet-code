@@ -45,7 +45,7 @@ public class ThreeSum {
         return triplets;
     }
 
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSumTwoPointerTrick(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> triplets = new ArrayList<>();
 

@@ -24,3 +24,13 @@ Example 3:
     Input: nums = [0,0,0]
     Output: [[0,0,0]]
     Explanation: The only possible triplet sums up to 0.
+
+# The two pointer trick
+
+The ‘two pointer trick’ gives a really nice solution to 3sum that doesn't require any extra data structures. It runs really quickly and some interviewers ‘expect’ this solution (which might be somewhat unfair, but now that you’re seeing it, it’s to your advantage).
+
+For the two pointer solution, the array must first be sorted, then we can use the sorted structure to cut down the number of comparisons we do. The idea is shown in this picture:
+
+![](2pointer3sum.svg)
+
+Source: https://fizzbuzzed.com/top-interview-questions-1/
