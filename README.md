@@ -12,6 +12,7 @@ Go to each folder for specifics:
 - [_Palindrome number_][4]
 - [_Binary search_][5]
 - [_Tree sum_][6]
+- [_Union find_][7]
 
 [1]: https://github.com/joantolos/leet-code/tree/main/two-sum
 [2]: https://github.com/joantolos/leet-code/tree/main/add-two-numbers
@@ -19,3 +20,4 @@ Go to each folder for specifics:
 [4]: https://github.com/joantolos/leet-code/tree/main/palindrome-number
 [5]: https://github.com/joantolos/leet-code/tree/main/binary-search
 [6]: https://github.com/joantolos/leet-code/tree/main/three-sum
+[7]: https://github.com/joantolos/leet-code/tree/main/union-find

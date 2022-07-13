@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/reverse-integer" />
             <option value="$PROJECT_DIR$/three-sum" />
             <option value="$PROJECT_DIR$/two-sum" />
+            <option value="$PROJECT_DIR$/union-find" />
           </set>
         </option>
       </GradleProjectSettings>
