@@ -26,9 +26,6 @@ public class TwoSum {
         return solution;
     }
 
-    n = 5 -> 25
-    n = 50 -> 2500
-    n = 150 -> 22500
     public int[] exponentialAlgorithm(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++){
             for (int j = 0; j < nums.length; j++){
