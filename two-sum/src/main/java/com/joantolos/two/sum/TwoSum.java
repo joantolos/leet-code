@@ -5,6 +5,30 @@ import java.util.Map;
 
 public class TwoSum {
 
+    public int[] exponentialAlgorithmBad(int[] nums, int target) {
+        int[] solution = new int[2];
+        boolean found = false;
+
+        for (int i = 0; i < nums.length; i++){
+            if (!found) {
+                for (int j = 0; j < nums.length; j++){
+                    if (!found) {
+                        if (i != j && (nums[i] + nums[j] == target)) {
+                            solution[0] = i;
+                            solution[1] = j;
+                            found = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        return solution;
+    }
+
+    n = 5 -> 25
+    n = 50 -> 2500
+    n = 150 -> 22500
     public int[] exponentialAlgorithm(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++){
             for (int j = 0; j < nums.length; j++){

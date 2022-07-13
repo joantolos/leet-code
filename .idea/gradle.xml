@@ -12,8 +12,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/add-two-numbers" />
+            <option value="$PROJECT_DIR$/binary-search" />
             <option value="$PROJECT_DIR$/palindrome-number" />
             <option value="$PROJECT_DIR$/reverse-integer" />
+            <option value="$PROJECT_DIR$/three-sum" />
             <option value="$PROJECT_DIR$/two-sum" />
           </set>
         </option>

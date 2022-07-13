@@ -15,12 +15,12 @@ public class TwoSumTest {
 
     @Test
     public void shouldComplyWithExampleOne() {
-        Assert.assertArrayEquals(new int[]{0, 1}, twoSum.exponentialAlgorithm(exampleOneNumbers, exampleOneTarget));
+        Assert.assertArrayEquals(new int[]{0, 1}, twoSum.exponentialAlgorithmBad(exampleOneNumbers, exampleOneTarget));
     }
 
     @Test
     public void shouldComplyWithExampleTwo() {
-        Assert.assertArrayEquals(new int[]{1, 2}, twoSum.exponentialAlgorithm(exampleTwoNumbers, exampleTwoTarget));
+        Assert.assertArrayEquals(new int[]{1, 2}, twoSum.exponentialAlgorithmBad(exampleTwoNumbers, exampleTwoTarget));
     }
 
     @Test
