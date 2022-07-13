@@ -63,9 +63,4 @@ public class UnionFindTest {
     public void twoAndNineShouldNotBeConnected() {
         Assert.assertFalse(unionFind.connected(2, 9));
     }
-
-    @Test
-    public void shouldCountThreeComponents() {
-        Assert.assertEquals(3, unionFind.count());
-    }
 }
