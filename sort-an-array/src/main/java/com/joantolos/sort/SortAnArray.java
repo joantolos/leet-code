@@ -16,6 +16,36 @@ public class SortAnArray {
         return nums;
     }
 
+    public int[] insertionSort(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (nums[j] < nums[j-1]) {
+                    swapByIndex(nums, j, j-1);
+                } else {
+                    break;
+                }
+            }
+        }
+        return nums;
+    }
+
+    public int[] shellSort(int[] nums) {
+        int h = 1;
+        while (h < nums.length/3) {
+            h = 3 * h + 1;
+        }
+
+        while (h >= 1) {
+            for (int i = h; i < nums.length; i++) {
+                for (int j = i; j >= h && nums[j] < nums[j-h]; j -= h) {
+                    swapByIndex(nums, j, j - h);
+                }
+            }
+            h = h/3;
+        }
+        return nums;
+    }
+
     protected int[] swapByElement(int[] a, int p, int q) {
         int pIndex = 0;
         int qIndex = 0;

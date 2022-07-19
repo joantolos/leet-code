@@ -24,6 +24,19 @@ public class SortAnArrayTest {
     @Test
     public void shouldSortWithSelectionSort() {
         Assert.assertArrayEquals(new int[]{1,2,3,5}, sortAnArray.selectionSort(new int[]{5,2,3,1}));
+        Assert.assertArrayEquals(new int[]{0,0,0}, sortAnArray.selectionSort(new int[]{0,0,0}));
+    }
+
+    @Test
+    public void shouldSortWithInsertionSort() {
+        Assert.assertArrayEquals(new int[]{1,2,3,5}, sortAnArray.insertionSort(new int[]{5,2,3,1}));
+        Assert.assertArrayEquals(new int[]{0,0,0}, sortAnArray.insertionSort(new int[]{0,0,0}));
+    }
+
+    @Test
+    public void shouldSortWithShellSort() {
+        Assert.assertArrayEquals(new int[]{1,2,3,5}, sortAnArray.shellSort(new int[]{5,2,3,1}));
+        Assert.assertArrayEquals(new int[]{0,0,0}, sortAnArray.shellSort(new int[]{0,0,0}));
     }
 
     @Test
